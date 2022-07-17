@@ -1,0 +1,979 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+      user-select: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .mediaViewInfo {
+          --web-view-name: Canvas;
+          --web-view-id: Canvas;
+          --web-scale-to-fit: true;
+          --web-scale-to-fit-type: width;
+          --web-enable-scale-up: true;
+          --web-scale-on-resize: true;
+          --web-center-vertically: true;
+          --web-enable-deep-linking: true;
+      }
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          border: none;
+      }
+  
+      :root {
+      --web-view-ids: Canvas;
+      --border-background: black;
+      --box-color: rgba(30, 30, 30, 0.904);
+      --border-color: #ffffff;
+      --button-color: #000000;
+      --button-hover-color: #ffffff;
+  
+       --font-family-montserrat:   "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+      
+      #Canvas {
+          -webkit-animation: slit-in-vertical 0.60s ease-in both;
+              animation: slit-in-vertical 0.60s ease-in both;
+          position: fixed;
+          width: 100vw;
+          height: 56.25vw;
+          overflow: hidden;
+          overflow: hidden;
+          --web-view-name: Canvas;
+          --web-view-id: Canvas;
+          --web-scale-to-fit: true;
+          --web-scale-to-fit-type: width;
+          --web-enable-scale-up: true;
+          --web-scale-on-resize: true;
+          --web-center-vertically: true;
+          --web-enable-deep-linking: true;
+      }
+      #Hintergrund {
+          position: absolute;
+          width: 31.25vw;
+          height: 10.417vw;
+          left: 12.813vw;
+          top: 8.073vw;
+          overflow: visible;
+      }
+      #Hintergrundverlauf {
+      position: fixed;
+      width: 49.479vw;
+      height: 23.49vw;
+      background-color: rgb(20, 20, 20);
+      left: 52.083vw;
+      top: 31.25vw;
+      transform: translate(-50%, -50%);
+      border: solid 0.104vw var(--border-color);
+      border-radius: 0.781vw;
+      }
+      .Hintergrundverlauf {
+          position: absolute;
+          overflow: visible;
+          width: 23.438vw;
+          height: 40.156vw;
+          left: 0vw;
+          top: 31.25vw;
+      }
+      .button {
+          position: absolute;
+          overflow: visible;
+          width: 3.333vw;
+          height: 3.333vw;
+          left: 0vw;
+          top: 0vw;
+      }
+      #close {
+          position: absolute;
+          left: 52%;
+          top: 18.229vw;
+          width: 10.417vw;
+          height: 2.604vw;
+          border: 0.104vw solid var(--border-color);
+          border-top-left-radius: 0.521vw;
+          border-top-right-radius: 0.521vw;
+          overflow: hidden;
+          background-color: var(--border-background);
+          transform: translate(-50%, -50%);
+      }
+      
+      #close:hover{
+          background-color: var(--box-color);
+      }
+  
+      #close h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 1.146vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+      line-height: 2.292vw;
+      }
+  
+      #close h1:hover{
+      color: var(--button-hover-color);
+      }
+  
+  
+      /* Gusenberg Container */
+      #containergusi {
+      position: fixed;
+      width: 15.625vw;
+      height: 23.438vw;
+      background-color: var(--border-background);
+      left: 35%;
+      top: 31.25vw;
+      transform: translate(-50%, -50%);
+      border: solid 0.104vw var(--border-color);
+      border-radius: 0.781vw;
+      }
+  
+      img.gusi{
+  
+  position: absolute;
+  width: 10.938vw;
+  height: 3.385vw;
+  transform: translate(-45%, -50%);
+  left: 1.979vw;
+  top: -16.667vw;
+  border-radius: 13.021vw;
+  
+  }
+      
+      #containergusiweaponimg {
+      position: fixed;
+      width: 12.5vw;
+      height: 5.208vw;
+      background-color: var(--box-color);
+      left: 35%;
+      top: 23.75vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+      }
+  
+      #containergusistatsbox {
+      position: fixed;
+      width: 12.5vw;
+      height: 11.938vw;
+      background-color: var(--box-color);
+      left: 35%;
+      top: 33vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+      }
+      #ButtonGusi {
+          position: fixed;
+          width: 10.417vw;
+          height: 2.083vw;
+          left: 35%;
+          top: 73%;
+          stroke: var(--border-color);
+          fill: var(--button-color);
+          transform: translate(-50%, -50%);
+      }
+      .button_cm {
+          position: absolute;
+          overflow: visible;
+          width: 10.365vw;
+          height: 2.083vw;
+          left: 0vw;
+          top: 0vw;
+      }
+  
+      #HERSTELLEN {
+          left: 27%;
+          top: 0.521vw;
+          position: absolute;
+          overflow: visible;
+          width: 3.906vw;
+          white-space: nowrap;
+          text-align: center;
+          font-family: var(--font-family-montserrat);
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.781vw;
+          color: white;
+      }
+      #HERSTELLEN:hover{
+          color: var(--button-hover-color);
+      }
+      h2 {
+      position: absolute;
+      top: -13.021vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: -1.302vw;
+      font-size: 1.563vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+      }
+  
+      h2:hover{
+          color: var(--button-hover-color);		
+      }
+  
+      /* Schuss Schaden */
+      #schadenstats{
+      position: fixed;
+      width: 5.208vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 34%;
+      top: 31.771vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      h3{
+      position: absolute;
+      top: 30.573vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: 31.354vw;
+      font-size: 0.781vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+  
+      }
+  
+      h3:hover{
+          color: var(--button-hover-color);		
+          
+      }
+  
+      #schadenstats1 {
+      position: fixed;
+      width: 5.208vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 36%;
+      top: 31.771vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+  
+  
+      
+      /* Feuer Rate */
+      #feuerratestats{
+      position: fixed;
+      width: 5.208vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 34%;
+      top: 33.854vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      h4{
+      position: absolute;
+      top: 32.656vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: 31.354vw;
+      font-size: 0.781vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+      }
+  
+      h4:hover{
+          color: var(--button-hover-color);		
+      }
+  
+      #feuerratestats1 {
+      position: fixed;
+      width: 2.083vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 37.5vw;
+      top: 33.854vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+  
+      /* Range */
+      #Rangestats{
+      position: fixed;
+      width: 5.208vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 34%;
+      top: 35.938vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      h5{
+      position: absolute;
+      top: 34.688vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: 31.354vw;
+      font-size: 0.781vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+      }
+      
+      h5:hover{
+          color: var(--button-hover-color);
+      }
+  
+      #Rangestats1 {
+      position: fixed;
+      width: 2.865vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 37.135vw;
+      top: 35.938vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+      
+  
+  
+  
+      /* Advance Container */
+      #containeradvanced {
+      position: fixed;
+      width: 15.625vw;
+      height: 23.438vw;
+      background-color: var(--border-background);
+      left: 52%;
+      top: 31.25vw;
+      transform: translate(-50%, -50%);
+      border: solid 0.104vw var(--border-color);
+      }
+      #ButtonAdvanced {
+          position: fixed;
+          width: 10.417vw;
+          height: 2.083vw;
+          left: 52%;
+          top: 73%;
+          stroke: var(--border-color);
+          fill: var(--button-color);
+          transform: translate(-50%, -50%);
+      }
+      .button_cp {
+          position: absolute;
+          overflow: visible;
+          width: 10.365vw;
+          height: 2.083vw;
+          left: 0vw;
+          top: 0vw;
+      }
+      #HERSTELLEN_cq {
+          left: 27%;
+          top: 0.521vw;
+          position: absolute;
+          overflow: visible;
+          width: 3.958vw;
+          white-space: nowrap;
+          text-align: center;
+      font-family: var(--font-family-montserrat);
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.781vw;
+          color: white;
+      }
+  
+      #HERSTELLEN_cq:hover{
+          color: var(--button-hover-color);
+      }
+  
+      img.advanced{
+  
+          position: absolute;
+          width: 10.938vw;
+          height: 3.385vw;
+          transform: translate(-45%, -50%);
+          left: 1.979vw;
+          top: -16.667vw;
+          border-radius: 13.021vw;
+  
+  }
+  
+      /* Schuss Schaden */
+      #schadenstatsadvanced{
+      position: fixed;
+      width: 5.208vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 50.781vw;
+      top: 31.771vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      .schadenadvanced{
+      position: absolute;
+      top: 30.573vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: 48.125vw;
+      font-size: 0.781vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+  
+      }
+      .schadenadvanced:hover{
+      color: var(--button-hover-color);		
+              }
+  
+      #schadenstats1advanced {
+      position: fixed;
+      width: 5.208vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 53.125vw;
+      top: 31.771vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+  
+  
+      
+      /* Feuer Rate */
+      #feuerratestatsadvanced{
+      position: fixed;
+      width: 7.031vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 51.719vw;
+      top: 33.854vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      .feuerrateadvanced{
+      position: absolute;
+      top: 32.656vw;	
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-left: 48.125vw;
+      font-size: 0.781vw;
+      font-family: var(--font-family-montserrat);
+      font-weight: 300;
+      }
+  
+      .feuerrateadvanced:hover{
+          color: var(--button-hover-color);
+      }
+  
+      #feuerratestats1advanced {
+      position: fixed;
+      width: 1.823vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 54.688vw;
+      top: 33.854vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+  
+      /* Range */
+      #Rangestatsadvanced{
+      position: fixed;
+      width: 4.948vw;
+      height: 0.365vw;
+      background-color: var(--border-color);
+      left: 50.781vw;
+      top: 35.938vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+  
+      }
+  
+      .RAangestatsadvanced{
+          position: absolute;
+          top: 34.688vw;	
+          color: rgb(255, 255, 255);
+          text-align: center;
+          margin-left: 48.125vw;
+          font-size: 0.781vw;
+          font-family: var(--font-family-montserrat);
+          font-weight: 300;
+          }
+  
+      .RAangestatsadvanced:hover{
+          color: var(--button-hover-color);
+      }
+  
+      #Rangestats1advanced {
+      position: fixed;
+      width: 2.604vw;
+      height: 0.417vw;
+      background-color: rgb(78, 78, 78);
+      left: 54.167vw;
+      top: 35.938vw;
+      transform: translate(-50%, -50%);
+      border-bottom-right-radius: 0.781vw;
+      border-top-right-radius: 0.781vw;
+      }
+      
+  
+      
+  #containeradvnacedweaponimg {
+      position: fixed;
+      width: 12.5vw;
+      height: 5.208vw;
+      background-color: var(--box-color);
+      left: 52%;
+      top: 23.75vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+      }
+  
+      #containeradvancedstatsbox {
+      position: fixed;
+      width: 12.5vw;
+      height: 11.938vw;
+      background-color: var(--box-color);
+      left: 52%;
+      top: 33vw;
+      transform: translate(-50%, -50%);
+      border-radius: 0.781vw;
+      }
+  
+      .Advancename {
+          position: absolute;
+          top: -13.021vw;	
+          color: rgb(255, 255, 255);
+          text-align: center;
+          margin-left: -2.448vw;
+          font-size: 1.563vw;
+          font-family: var(--font-family-montserrat);
+          font-weight: 300;
+          }
+  
+      .Advancename:hover{
+          color: var(--button-hover-color);		
+      }
+      
+  
+      /* Bullpup Container */
+      #containerbullpup {
+      position: fixed;
+      width: 15.625vw;
+      height: 23.438vw;
+      background-color: var(--border-background);
+      left: 69%;
+      top: 31.25vw;
+      transform: translate(-50%, -50%);
+      border: solid 0.104vw var(--border-color);
+      border-radius: 0.781vw;
+      }
+  
+      .bullpupname {
+          position: absolute;
+          top: -13.021vw;	
+          color: rgb(255, 255, 255);
+          text-align: center;
+          margin-left: -1.823vw;
+          font-size: 1.563vw;
+          font-family: var(--font-family-montserrat);
+          font-weight: 300;
+          }
+      
+      .bullpupname:hover{
+  
+          color: var(--button-hover-color);		
+      }
+  
+      img.bullpup{
+  
+          position: absolute;
+          width: 10.938vw;
+          height: 3.385vw;
+          transform: translate(-45%, -50%);
+          left: 1.979vw;
+          top: -16.667vw;
+          border-radius: 13.021vw;
+  
+  }
+  
+      #ButtonBullpup {
+          position: fixed;
+          width: 10.417vw;
+          height: 2.083vw;
+          left: 69%;
+          top: 73%;
+          stroke: var(--border-color);
+          fill: var(--button-color);
+          transform: translate(-50%, -50%);
+      }
+  
+      .button_cs {
+          position: absolute;
+          overflow: visible;
+          width: 10.365vw;
+          height: 2.083vw;
+          left: 0vw;
+          top: 0vw;
+      }
+      #HERSTELLEN_ct {
+          position: absolute;
+          top: 0.521vw;
+          left: 27%;
+          width: 3.958vw;
+          white-space: nowrap;
+          font-family: var(--font-family-montserrat);
+          font-style: normal;
+          font-weight: normal;
+          text-align: center;
+          font-size: 0.781vw;
+          color: white;	
+      }
+      #HERSTELLEN_ct:hover{
+          color: var(--button-hover-color);
+      }
+              #Buttonbullpup {
+                  position: fixed;
+                  width: 10.417vw;
+                  height: 2.083vw;
+                  left: 69%;
+                  top: 73%;
+                  stroke: var(--border-color);
+                  fill: var(--button-color);
+                  transform: translate(-50%, -50%);
+              }
+              .button_cp {
+                  position: absolute;
+                  overflow: visible;
+                  width: 10.365vw;
+                  height: 2.083vw;
+                  left: 0vw;
+                  top: 0vw;
+              }
+              #HERSTELLEN_cq {
+                  left: 27%;
+                  top: 0.521vw;
+                  position: absolute;
+                  overflow: visible;
+                  width: 3.958vw;
+                  white-space: nowrap;
+                  text-align: center;
+              font-family: var(--font-family-montserrat);
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 0.781vw;
+                  color: white;
+              }
+          
+              #HERSTELLEN_cq:hover{
+          color: var(--button-hover-color);
+      }
+          
+              img.bullpup{
+          
+                  position: absolute;
+                  width: 10.938vw;
+                  height: 3.385vw;
+                  transform: translate(-45%, -50%);
+                  left: 1.979vw;
+                  top: -16.667vw;
+                  border-radius: 13.021vw;
+          
+          }
+          
+              /* Schuss Schaden */
+              #schadenstatsbullpup{
+              position: fixed;
+              width: 5.208vw;
+              height: 0.365vw;
+              background-color: var(--border-color);
+              left: 67.708vw;
+              top: 31.771vw;
+              transform: translate(-50%, -50%);
+              border-radius: 0.781vw;
+          
+              }
+          
+              .schadenbullpup{
+              position: absolute;
+              top: 30.573vw;	
+              color: rgb(255, 255, 255);
+              text-align: center;
+              margin-left: 65.104vw;
+              font-size: 0.781vw;
+              font-family: var(--font-family-montserrat);
+              font-weight: 300;
+          
+              }
+          
+              .schadenbullpup:hover{
+                  color: var(--button-hover-color);		
+              }
+              #schadenstats1bullpup{
+              position: fixed;
+              width: 4.167vw;
+              height: 0.417vw;
+              background-color: rgb(78, 78, 78);
+              left: 70.313vw;
+              top: 31.771vw;
+              transform: translate(-50%, -50%);
+              border-bottom-right-radius: 0.781vw;
+              border-top-right-radius: 0.781vw;
+              }
+          
+          
+              
+              /* Feuer Rate */
+              #feuerratestatsbullpup{
+              position: fixed;
+              width: 7.031vw;
+              height: 0.365vw;
+              background-color: var(--border-color);
+              left: 68.594vw;
+              top: 33.854vw;
+              transform: translate(-50%, -50%);
+              border-radius: 0.781vw;
+          
+              }
+          
+              .feuerratebullpup{
+              position: absolute;
+              top: 32.656vw;	
+              color: rgb(255, 255, 255);
+              text-align: center;
+              margin-left: 65.104vw;
+              font-size: 0.781vw;
+              font-family: var(--font-family-montserrat);
+              font-weight: 300;
+              }
+          
+              .feuerratebullpup:hover{
+                  color: var(--button-hover-color);
+              }
+  
+              #feuerratestats1bullpup {
+              position: fixed;
+              width: 1.823vw;
+              height: 0.417vw;
+              background-color: rgb(78, 78, 78);
+              left: 71.51vw;
+              top: 33.854vw;
+              transform: translate(-50%, -50%);
+              border-bottom-right-radius: 0.781vw;
+              border-top-right-radius: 0.781vw;
+              }
+          
+              /* Range */
+              #Rangestatsbullpup{
+              position: fixed;
+              width: 4.948vw;
+              height: 0.365vw;
+              background-color: var(--border-color);
+              left: 67.604vw;
+              top: 35.938vw;
+              transform: translate(-50%, -50%);
+              border-radius: 0.781vw;
+          
+              }
+          
+              .rangestatsbullpupp{
+              position: absolute;
+              top: 34.688vw;	
+              color: rgb(255, 255, 255);
+              text-align: center;
+              margin-left: 65.104vw;
+              font-size: 0.781vw;
+              font-family: var(--font-family-montserrat);
+              font-weight: 300;
+              }
+  
+              .rangestatsbullpupp:hover{
+                  color: var(--button-hover-color);
+              }
+          
+              #Rangestats1bullpup {
+              position: fixed;
+              width: 2.604vw;
+              height: 0.417vw;
+              background-color: rgb(78, 78, 78);
+              left: 71.094vw;
+              top: 35.938vw;
+              transform: translate(-50%, -50%);
+              border-bottom-right-radius: 0.781vw;
+              border-top-right-radius: 0.781vw;
+              }
+              
+          
+              
+          #containerbullpupweaponimg {
+              position: fixed;
+              width: 12.5vw;
+              height: 5.208vw;
+              background-color: var(--box-color);
+              left: 69%;
+              top: 23.75vw;
+              transform: translate(-50%, -50%);
+              border-radius: 0.781vw;
+              }
+          
+              #containerbullpupstatsbox {
+              position: fixed;
+              width: 12.5vw;
+              height: 11.938vw;
+              background-color: var(--box-color);
+              left: 69%;
+              top: 33vw;
+              transform: translate(-50%, -50%);
+              border-radius: 0.781vw;
+              }
+          
+              .bullpupame {
+                  position: absolute;
+                  top: -13.021vw;	
+                  color: rgb(255, 255, 255);
+                  text-align: center;
+                  margin-left: -0.938vw;
+                  font-size: 1.563vw;
+                  font-family: var(--font-family-montserrat);
+                  font-weight: 300;
+                  }
+  
+ 
+  .tooltip {
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    width: 138px;
+    height: 30px;
+    left: 603px;
+    top: 705px;
+    border-radius: 0.781vw;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-family: var(--font-family-montserrat);
+
+  }
+  
+  .tooltip .tooltiptext {
+    position: absolute;
+    visibility: hidden;
+    top: -200px;
+    left: -250px;
+    width: 180px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 0.781vw;
+    border: solid 3px #ffffff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+  }
+
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+  .tooltip2 {
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    width: 138px;
+    height: 30px;
+    left: 930px;
+    top: 705px;
+    border-radius: 0.781vw;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-family: var(--font-family-montserrat);
+
+  }
+  
+  .tooltip2 .tooltiptext2 {
+    position: fixed;
+    visibility: hidden;
+    top: -200px;
+    left: -580px;
+    width: 180px;
+    height: 180px;
+    background-color: #000000;
+    border-radius: 0.781vw;
+    border: solid 3px #ffffff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+  }
+
+  
+  .tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+  }
+
+  .tooltip4 {
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    width: 138px;
+    height: 30px;
+    left: 1255px;
+    top: 705px;
+    border-radius: 0.781vw;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-family: var(--font-family-montserrat);
+
+  }
+  
+  .tooltip4 .tooltiptext4 {
+    position: fixed;
+    visibility: hidden;
+    top: -200px;
+    left: -895px;
+    width: 180px;
+    height: 180px;
+    background-color: #000000;
+    border-radius: 0.781vw;
+    border: solid 3px #ffffff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+  }
+
+  
+  .tooltip4:hover .tooltiptext4 {
+    visibility: visible;
+  }
